@@ -1,0 +1,32 @@
+{
+  "syntax": "postcss-scss",
+  "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss"],
+  "ignoreFiles": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+  "rules": {
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"]
+      }
+    ],
+    "max-nesting-depth": 5,
+    "value-keyword-case": "lower",
+    "value-no-vendor-prefix": true,
+    "function-url-quotes": "always",
+    "declaration-no-important": true,
+    "font-weight-notation": "numeric",
+    "selector-no-vendor-prefix": true,
+    "property-no-vendor-prefix": true,
+    "no-descending-specificity": null,
+    "at-rule-empty-line-before": null,
+    "selector-no-qualifying-type": null,
+    "selector-attribute-quotes": "always",
+    "function-url-no-scheme-relative": true,
+    "declaration-empty-line-before": "never",
+    "media-feature-name-no-vendor-prefix": true,
+    "selector-pseudo-element-colon-notation": "single",
+    "font-family-name-quotes": "always-where-recommended",
+    "import-notation": "string",
+    "declaration-block-no-shorthand-property-overrides": true
+  }
+}
