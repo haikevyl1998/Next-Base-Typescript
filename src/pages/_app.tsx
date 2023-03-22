@@ -1,11 +1,19 @@
-import type { AppProps } from 'next/app';
+import { CacheProvider } from '@emotion/react';
+import { useRouter } from 'next/router';
 import appStyles from '@scss/main.scss';
+import { createEmotionCache } from '@/theme';
 
-export default function App({ Component, pageProps }: AppProps) {
+const clientSideEmotionCache = createEmotionCache();
+
+export default function App({ Component, pageProps, emotionCache = clientSideEmotionCache }: any) {
+  const router = useRouter();
+
   return (
     <>
       <style jsx>{appStyles}</style>
-      <Component {...pageProps} />
+      <CacheProvider value={emotionCache}>
+        <Component {...pageProps} key={router.asPath} />
+      </CacheProvider>
     </>
   );
 }

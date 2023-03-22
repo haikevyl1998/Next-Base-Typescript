@@ -23,8 +23,11 @@
       "@containers/*": ["./src/containers/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@scss/*": ["./src/scss/*"],
+      "@services/*": ["./src/services/*"],
+      "@theme/*": ["./src/theme/*"],
       "@utils/*": ["./src/utils/*"],
-      "@validations/*": ["./src/validations/*"]
+      "@validations/*": ["./src/validations/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
