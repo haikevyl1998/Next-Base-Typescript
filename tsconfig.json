@@ -18,15 +18,6 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@public/*": ["./public/*"],
-      "@components/*": ["./src/components/*"],
-      "@containers/*": ["./src/containers/*"],
-      "@hooks/*": ["./src/hooks/*"],
-      "@scss/*": ["./src/scss/*"],
-      "@services/*": ["./src/services/*"],
-      "@theme/*": ["./src/theme/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@validations/*": ["./src/validations/*"],
       "@/*": ["./src/*"]
     }
   },

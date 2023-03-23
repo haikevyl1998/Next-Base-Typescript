@@ -46,6 +46,8 @@ const nextConfig = nextTranslate({
   },
 
   generateBuildId: () => nextBuildId({ dir: __dirname }),
+
+  transpilePackages: ['lodash', '@mui/material', '@mui/icons-material', '@mui/styles'],
 });
 
 module.exports = nextConfig;
